@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/TopLeft"
+        android:tag="TopLeft"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:text="Hello World!"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/TopRight"
+        android:tag="TopRight"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:text="Hello World!"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/darker_gray"/>
+
+    <View
+        android:id="@+id/BottomRight"
+        android:tag="BottomRight"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="@android:color/darker_gray"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/BottomLeft"
+        android:tag="BottomLeft"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="@android:color/darker_gray"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
